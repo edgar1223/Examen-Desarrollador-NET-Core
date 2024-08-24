@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LtSLAM27pqPg6rUoEKuyPie9XV7oSgLVL7BnfJ7chBJ14NrlSywapcxpwcinPNhbaCBZAQKvMjuh7SMf4LVtfw==",
+  "dgSpecHash": "pDYoeLrbTBYHu0bBcfQWGVL2YCRpjdYloyWhqsbbpeaKYMN4RgAO8kVNvNahOkbtgmnHv6BH+Hw2GTy8+UxDXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.API\\Tienda.API.csproj",
+  "projectFilePath": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.API\\Tienda.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brene\\.nuget\\packages\\bcrypt.net-next\\3.2.0\\bcrypt.net-next.3.2.0.nupkg.sha512",
     "C:\\Users\\brene\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.0.2\\microsoft.aspnetcore.jsonpatch.3.0.2.nupkg.sha512",

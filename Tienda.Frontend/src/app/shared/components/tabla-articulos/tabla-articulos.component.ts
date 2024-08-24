@@ -184,4 +184,7 @@ export class TablaArticulosComponent {
       }
     );
   }
+  isStockAvailable(stock: number): boolean {
+    return stock > 0;
+  }
 }

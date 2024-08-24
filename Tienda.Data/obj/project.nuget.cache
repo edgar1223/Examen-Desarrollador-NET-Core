@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rym/D0gFoXopD6yGyC+qRrgfHWzVPTX45nGZivqKJEP7reNrVPMtquvKBzI+wHS+uFMbCSLQflOotLIA9FIs4g==",
+  "dgSpecHash": "L4knzsO7XHZOhMTD1TkWvgdSL7+sNZqvyZmFgdDN9qV32timMh0f+5Yr3qFrDvKOqTXKPSFLLGTKZFJEJq/qYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Data\\Tienda.Data.csproj",
+  "projectFilePath": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Data\\Tienda.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brene\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\brene\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

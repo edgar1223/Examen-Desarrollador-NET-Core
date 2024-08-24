@@ -27,4 +27,8 @@ export class ClienteService {
 
     return this.http.put<void>(`${this.apiUrl}clientes/${id}`, cleinte)
   }
+  obtenerCleinteId(id:number):Observable<Clientes>{
+    
+    return this.http.get<Clientes>(`${this.apiUrl}clientes/${id}`);
+  }
 }

@@ -4,6 +4,8 @@ import { Articulos } from '../../../modules/articulos';
 import { environment } from '../../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { CarritoCompraDto } from '../../../modules/carrito-compra-dto';
+import jwt_decode from 'jwt-decode';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -51,7 +53,34 @@ export class CarritoService {
   }
   comprar(compra: CarritoCompraDto): Observable<string> {
     return this.http.post(`${this.apiUrl}/comprar`, compra, { responseType: 'text' as 'json' }).pipe(
-      map(response => response as string)  // Convertir la respuesta a texto
+      map(response => response as string)  
     );
+  }
+  obtenerId() {
+    const token = localStorage.getItem('Token');
+    if (token) {
+      try {
+        const decodedToken: any = this.parseJwt(token);
+        const clienteId = decodedToken.clienteId; 
+        return clienteId;
+      } catch (error) {
+        console.error('Error al decodificar el token:', error);
+      }
+    }
+  }
+
+  private parseJwt(token: string): any {
+    try {
+      const base64Url = token.split('.')[1]; 
+      const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/'); 
+      const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+      }).join(''));
+
+      return JSON.parse(jsonPayload); 
+    } catch (error) {
+      console.error('Error al decodificar el token:', error);
+      return null;
+    }
   }
 }

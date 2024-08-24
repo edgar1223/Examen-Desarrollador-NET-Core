@@ -6576,11 +6576,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Business\\Tienda.Business.csproj",
+      "projectUniqueName": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Business\\Tienda.Business.csproj",
       "projectName": "Tienda.Business",
-      "projectPath": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Business\\Tienda.Business.csproj",
+      "projectPath": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Business\\Tienda.Business.csproj",
       "packagesPath": "C:\\Users\\brene\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Business\\obj\\",
+      "outputPath": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\brene\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6594,11 +6594,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Data\\Tienda.Data.csproj": {
-              "projectPath": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Data\\Tienda.Data.csproj"
+            "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Data\\Tienda.Data.csproj": {
+              "projectPath": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Data\\Tienda.Data.csproj"
             },
-            "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Entities\\Tienda.Entities.csproj": {
-              "projectPath": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Entities\\Tienda.Entities.csproj"
+            "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Entities\\Tienda.Entities.csproj": {
+              "projectPath": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Entities\\Tienda.Entities.csproj"
             }
           }
         }

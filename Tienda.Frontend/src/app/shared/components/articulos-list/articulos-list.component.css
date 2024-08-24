@@ -1,31 +1,18 @@
 .container {
-    max-width: 800px;
-  }
-  
-  .card {
-    width: 100%;
-    border-radius: 8px;
-    background-color: #f8f9fa;
-  }
-  
-  .table {
-    margin-bottom: 0;
-  }
-  
-  .table th, .table td {
-    text-align: center;
-  }
-  
-  .table th {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #f2f2f2;
-  }
-  
-  .shadow-lg {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.card {
+  margin: 0.5rem;
+}
+
+.ml-md-4 {
+  margin-left: 1.5rem;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}

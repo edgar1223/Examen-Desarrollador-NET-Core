@@ -33,7 +33,6 @@ namespace Tienda.Business.Services
                 throw new ArgumentException("El nombre de usuario y la contraseña no pueden estar vacíos.");
             }
 
-            // Obtén el usuario desde el contexto
             var user = _context.Clientes.FirstOrDefault(c => c.Nombre == nombre);
 
             if (user == null)
@@ -41,11 +40,9 @@ namespace Tienda.Business.Services
                 return null;
             }
 
-            // Verifica la contraseña
             bool passwordMatch = BCrypt.Net.BCrypt.Verify(contraseña, user.Contraseña);
             if (passwordMatch)
             {
-                // Generar y retornar el token
                 return GenerarToken(user);
             }
 

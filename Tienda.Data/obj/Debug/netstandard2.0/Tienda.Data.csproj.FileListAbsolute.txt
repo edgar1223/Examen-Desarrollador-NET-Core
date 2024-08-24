@@ -10,3 +10,15 @@ C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Data\obj\Debug\netstandard2.0\T
 C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Data\obj\Debug\netstandard2.0\Tienda.Data.csproj.CopyComplete
 C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Data\obj\Debug\netstandard2.0\Tienda.Data.dll
 C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Data\obj\Debug\netstandard2.0\Tienda.Data.pdb
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Data\bin\Debug\netstandard2.0\Tienda.Data.deps.json
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Data\bin\Debug\netstandard2.0\Tienda.Data.dll
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Data\bin\Debug\netstandard2.0\Tienda.Data.pdb
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Data\bin\Debug\netstandard2.0\Tienda.Entities.dll
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Data\bin\Debug\netstandard2.0\Tienda.Entities.pdb
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Data\obj\Debug\netstandard2.0\Tienda.Data.csprojAssemblyReference.cache
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Data\obj\Debug\netstandard2.0\Tienda.Data.AssemblyInfoInputs.cache
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Data\obj\Debug\netstandard2.0\Tienda.Data.AssemblyInfo.cs
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Data\obj\Debug\netstandard2.0\Tienda.Data.csproj.CoreCompileInputs.cache
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Data\obj\Debug\netstandard2.0\Tienda.Data.csproj.CopyComplete
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Data\obj\Debug\netstandard2.0\Tienda.Data.dll
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Data\obj\Debug\netstandard2.0\Tienda.Data.pdb

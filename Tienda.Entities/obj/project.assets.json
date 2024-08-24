@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Entities\\Tienda.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Entities\\Tienda.Entities.csproj",
       "projectName": "Tienda.Entities",
-      "projectPath": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Entities\\Tienda.Entities.csproj",
+      "projectPath": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Entities\\Tienda.Entities.csproj",
       "packagesPath": "C:\\Users\\brene\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Entities\\obj\\",
+      "outputPath": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\brene\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YOWL5cvXp7vde9ujcRZLART4BzGdHMyFZ4MtswNSnRTKIUGdl9rmRvczft7rkbvgTDgGp33p7LsnWq8h5L2mlQ==",
+  "dgSpecHash": "80jr3fbx8N26sFbF7wXK60+KaYeZO1iG8qViCc/psKFlQ2xCSiUbJdoNcieNekxtFNpzb/Yqp/aGKFq9UXIPxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Business\\Tienda.Business.csproj",
+  "projectFilePath": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Business\\Tienda.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brene\\.nuget\\packages\\bcrypt.net-next\\3.2.0\\bcrypt.net-next.3.2.0.nupkg.sha512",
     "C:\\Users\\brene\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

@@ -25,7 +25,10 @@ namespace Tienda.Business.Services
 
         public async Task<Cliente> GetClienteByIdAsync(int id)
         {
-            return await _context.Clientes.FindAsync(id);
+             return await _context.Clientes
+        .Include(c => c.Articulos)  
+        .ThenInclude(ac => ac.Articulo)  
+        .FirstOrDefaultAsync(c => c.Id == id);
         }
 
         public async Task AddClienteAsync(Cliente cliente)
@@ -50,18 +53,28 @@ namespace Tienda.Business.Services
                 await _context.SaveChangesAsync();
             }
         }
-         public async Task RegistrarCompraAsync(int clienteId, int articuloId, DateTime fechaCompra)
-    {
-        var compra = new ArticuloCliente
+        public async Task RegistrarCompraAsync(int clienteId, int articuloId, DateTime fechaCompra)
         {
-            ClienteId = clienteId,
-            ArticuloId = articuloId,
-            Fecha = fechaCompra
-        };
+            var compraExistente = await _context.ArticuloClientes
+           .FirstOrDefaultAsync(ac => ac.ClienteId == clienteId && ac.ArticuloId == articuloId);
 
-        _context.ArticuloClientes.Add(compra);
-        await _context.SaveChangesAsync();
-    }
+            if (compraExistente != null)
+            {
+                compraExistente.Fecha = fechaCompra;
+            }
+            else
+            {
+                var compra = new ArticuloCliente
+                {
+                    ClienteId = clienteId,
+                    ArticuloId = articuloId,
+                    Fecha = fechaCompra
+                };
+                _context.ArticuloClientes.Add(compra);
+            }
+
+            await _context.SaveChangesAsync();
+        }
     }
 }
 

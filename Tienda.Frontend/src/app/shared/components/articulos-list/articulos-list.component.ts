@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Articulos } from '../../../modules/articulos';
 import { CarritoService } from '../../../core/services/carrito/carrito.service';
+import { Clientes } from '../../../modules/clientes';
+import { ClienteService } from '../../../core/services/cliente/cliente.service';
 
 @Component({
   selector: 'app-articulos-list',
@@ -9,16 +11,18 @@ import { CarritoService } from '../../../core/services/carrito/carrito.service';
 })
 export class ArticulosListComponent {
   articulos: Articulos[] = [];
+  historialCompras: Clientes | undefined; 
   userId!: number ;
   total: number = 0;
   mensaje: string = '';
   Alerta: boolean = false;
   Error: boolean = false;
-  constructor(private carritoService: CarritoService) { }
+  constructor(private clienteService:ClienteService,private carritoService: CarritoService) { }
 
   ngOnInit(): void {
     this.loadArticulosFromLocalStorage();
     this.calculateTotal();
+    this.obtenerClienteId();
   }
 
   loadArticulosFromLocalStorage(): void {
@@ -36,8 +40,9 @@ export class ArticulosListComponent {
     this.total = this.articulos.reduce((sum, articulo) => sum + (articulo.Stock * articulo.Precio), 0);
   }
   comprar(): void {
+    
     const carritoCompra = {
-      ClienteId: this.userId,
+      ClienteId: this.carritoService.obtenerId(),
       Carrito: this.articulos.map(articulo => ({
         articuloId: articulo.Id, 
         cantidad: articulo.Stock
@@ -51,6 +56,7 @@ export class ArticulosListComponent {
         
         localStorage.removeItem('cartItems');
         this.articulos = [];
+        this.calculateTotal();
           const delay = 5000;
           setTimeout(() => {
             this.Alerta = false;
@@ -63,7 +69,7 @@ export class ArticulosListComponent {
         this.Error = true;
           const delay = 5000;
           setTimeout(() => {
-            this.Alerta = false;
+            this.Error = false;
           }, delay);
       }
     );
@@ -83,4 +89,13 @@ export class ArticulosListComponent {
         this.Error = false;
       }, delay); }
   }
+  obtenerClienteId(){
+    this.clienteService.obtenerCleinteId(this.carritoService.obtenerId()).subscribe(repuesta=>{
+      this.historialCompras=repuesta;
+      console.log(repuesta)
+    },error=>{
+      console.log(error)
+    })
+  }
+
 }

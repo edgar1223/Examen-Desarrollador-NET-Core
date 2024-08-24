@@ -5548,11 +5548,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.API\\Tienda.API.csproj",
+      "projectUniqueName": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.API\\Tienda.API.csproj",
       "projectName": "Tienda.API",
-      "projectPath": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.API\\Tienda.API.csproj",
+      "projectPath": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.API\\Tienda.API.csproj",
       "packagesPath": "C:\\Users\\brene\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.API\\obj\\",
+      "outputPath": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\brene\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5566,11 +5566,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Business\\Tienda.Business.csproj": {
-              "projectPath": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Business\\Tienda.Business.csproj"
+            "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Business\\Tienda.Business.csproj": {
+              "projectPath": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Business\\Tienda.Business.csproj"
             },
-            "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Data\\Tienda.Data.csproj": {
-              "projectPath": "C:\\Users\\brene\\OneDrive\\Documentos\\prueba\\Tienda.Data\\Tienda.Data.csproj"
+            "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Data\\Tienda.Data.csproj": {
+              "projectPath": "C:\\Users\\brene\\Music\\Examen-Desarrollador-NET-Core\\Tienda.Data\\Tienda.Data.csproj"
             }
           }
         }

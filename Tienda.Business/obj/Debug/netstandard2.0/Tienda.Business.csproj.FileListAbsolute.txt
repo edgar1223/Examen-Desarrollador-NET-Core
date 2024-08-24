@@ -12,3 +12,17 @@ C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Business\bin\Debug\netstandard2
 C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Business\obj\Debug\netstandard2.0\Tienda.Business.csproj.CopyComplete
 C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Business\obj\Debug\netstandard2.0\Tienda.Business.dll
 C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Business\obj\Debug\netstandard2.0\Tienda.Business.pdb
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Business\bin\Debug\netstandard2.0\Tienda.Business.deps.json
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Business\bin\Debug\netstandard2.0\Tienda.Business.dll
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Business\bin\Debug\netstandard2.0\Tienda.Business.pdb
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Business\bin\Debug\netstandard2.0\Tienda.Data.dll
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Business\bin\Debug\netstandard2.0\Tienda.Entities.dll
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Business\bin\Debug\netstandard2.0\Tienda.Data.pdb
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Business\bin\Debug\netstandard2.0\Tienda.Entities.pdb
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Business\obj\Debug\netstandard2.0\Tienda.Business.csprojAssemblyReference.cache
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Business\obj\Debug\netstandard2.0\Tienda.Business.AssemblyInfoInputs.cache
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Business\obj\Debug\netstandard2.0\Tienda.Business.AssemblyInfo.cs
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Business\obj\Debug\netstandard2.0\Tienda.Business.csproj.CoreCompileInputs.cache
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Business\obj\Debug\netstandard2.0\Tienda.Business.csproj.CopyComplete
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Business\obj\Debug\netstandard2.0\Tienda.Business.dll
+C:\Users\brene\Music\Examen-Desarrollador-NET-Core\Tienda.Business\obj\Debug\netstandard2.0\Tienda.Business.pdb

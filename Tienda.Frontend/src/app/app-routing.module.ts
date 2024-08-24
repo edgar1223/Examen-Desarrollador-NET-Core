@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'cliente', component: TablaComponent ,canActivate: [AuthGuard]},
   { path: 'tienda', component: TablaTiendaComponent ,canActivate: [AuthGuard]},
   { path: 'login', component: LoginComponent },
-  { path: 'carrito', component: ArticulosListComponent },
+  { path: 'carrito', component: ArticulosListComponent,canActivate: [AuthGuard] },
   
   { path: '', redirectTo: 'cliente', pathMatch: 'full' },
 ];
