@@ -1,0 +1,147 @@
+<app-menu></app-menu>
+<div class="container my-4">
+  <div class="alert alert-success" *ngIf="Alerta">
+    <strong>Success!</strong> {{mensaje}}
+  </div>
+  <div class="card mb-4">
+    <div class="card-body">
+      <h5 class="card-title">Formulario de Tienda</h5>
+      <form [formGroup]="tiendaForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="sucursal">Sucursal</label>
+              <input
+                id="sucursal"
+                formControlName="sucursal"
+                type="text"
+                class="form-control"
+                placeholder="Sucursal"
+              />
+              <div *ngIf="tiendaForm.get('sucursal')?.invalid && tiendaForm.get('sucursal')?.touched">
+                <small class="text-danger">La sucursal es obligatoria.</small>
+              </div>
+            </div>
+    
+            <div class="form-group">
+              <label for="direccion">Dirección</label>
+              <input
+                id="direccion"
+                formControlName="direccion"
+                type="text"
+                class="form-control"
+                placeholder="Dirección"
+              />
+              <div *ngIf="tiendaForm.get('direccion')?.invalid && tiendaForm.get('direccion')?.touched">
+                <small class="text-danger">La dirección es obligatoria.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="form-group">
+          <label for="articulos">Agregar Artículos</label>
+          <select
+            id="articulos"
+            class="form-control"
+            
+        
+          >
+            <option value="" disabled selected>Selecciona un artículo</option>
+            <option *ngFor="let articulo of articulosDisponibles" [ngValue]="articulo" (click)="addArticulo2(articulo)">
+              {{ articulo.Descripcion }} - ${{ articulo.Precio }}
+            </option>
+          </select>
+        </div>
+    
+        <div *ngIf="articulosSeleccionados.length > 0">
+          <h5>Artículos Seleccionados</h5>
+          <ul class="list-group">
+            <li *ngFor="let articulo of articulosSeleccionados; let i = index" class="list-group-item">
+              {{ articulo.Id }} {{ articulo.Descripcion }} - ${{ articulo.Precio }}
+              <button type="button" class="btn btn-danger btn-sm float-right" (click)="removeArticulo(i)">
+                X
+              </button>
+            </li>
+          </ul>
+        </div>
+    
+        <br />
+    
+        <!-- Botones de Guardar y Cancelar -->
+        <button type="submit" class="btn btn-primary" [disabled]="tiendaForm.invalid"  *ngIf="!editar">
+          Guardar Tienda
+        </button>
+        <button (click)="editarTienda()" class="btn btn btn-success" *ngIf="editar" >
+          Editar Articulo
+        </button>
+        <button (click)="limpiar()" class="btn btn-danger">Cancelar</button>
+      </form>
+    </div>
+    
+    
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource" matSort class="mat-table">
+          <!-- Columna Sucursal -->
+          <ng-container matColumnDef="Sucursal">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Sucursal</th>
+            <td mat-cell *matCellDef="let tienda">{{ tienda.Sucursal }}</td>
+          </ng-container>
+
+          <!-- Columna Dirección -->
+          <ng-container matColumnDef="Direccion">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Dirección</th>
+            <td mat-cell *matCellDef="let tienda">{{ tienda.Direccion }}</td>
+          </ng-container>
+
+ <!-- Columna Nombre del Artículo -->
+<ng-container matColumnDef="Articulo">
+  <th mat-header-cell *matHeaderCellDef mat-sort-header>Artículos</th>
+  <td mat-cell *matCellDef="let tienda">
+    <div *ngIf="tienda.Articulos?.length > 0; else noArticulos">
+      <span *ngFor="let articulo of tienda.Articulos">
+        {{ articulo.ArticuloId }} {{ articulo.Articulo.Descripcion }}<br>
+      </span>
+    </div>
+    <ng-template #noArticulos>
+      <span>No disponible</span>
+    </ng-template>
+  </td>
+</ng-container>
+
+
+
+          <!-- Columna Acciones -->
+          <ng-container matColumnDef="Acciones">
+            <th mat-header-cell *matHeaderCellDef>Acciones</th>
+            <td mat-cell *matCellDef="let tienda">
+              <button class="btn btn-info btn-sm mx-1" (click)="onEdit(tienda)">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button
+                class="btn btn-danger btn-sm mx-1"
+                (click)="onDelete(tienda)"
+              >
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </td>
+          </ng-container>
+
+          <!-- Header de la tabla -->
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <!-- Fila de datos -->
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+
+        <!-- Paginador -->
+        <mat-paginator
+          [pageSizeOptions]="[5, 10, 20]"
+          showFirstLastButtons
+        ></mat-paginator>
+      </div>
+    </div>
+  </div>
+</div>

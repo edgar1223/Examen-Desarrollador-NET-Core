@@ -1,0 +1,9 @@
+C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Entities\bin\Debug\netstandard2.0\Tienda.Entities.deps.json
+C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Entities\bin\Debug\netstandard2.0\Tienda.Entities.dll
+C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Entities\bin\Debug\netstandard2.0\Tienda.Entities.pdb
+C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Entities\obj\Debug\netstandard2.0\Tienda.Entities.csprojAssemblyReference.cache
+C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Entities\obj\Debug\netstandard2.0\Tienda.Entities.AssemblyInfoInputs.cache
+C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Entities\obj\Debug\netstandard2.0\Tienda.Entities.AssemblyInfo.cs
+C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Entities\obj\Debug\netstandard2.0\Tienda.Entities.csproj.CoreCompileInputs.cache
+C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Entities\obj\Debug\netstandard2.0\Tienda.Entities.dll
+C:\Users\brene\OneDrive\Documentos\prueba\Tienda.Entities\obj\Debug\netstandard2.0\Tienda.Entities.pdb

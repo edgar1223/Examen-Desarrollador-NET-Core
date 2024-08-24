@@ -1,0 +1,182 @@
+<app-menu></app-menu>
+<div class="container my-4">
+  <div class="alert alert-success" *ngIf="Alerta">
+    <strong>Success!</strong> {{ mensaje }}
+  </div>
+  <div class="card mb-4">
+    <div class="card-body">
+      <h5 class="card-title">formulario de Cliente</h5>
+      <form [formGroup]="clienteForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Campo Nombre -->
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input
+                id="nombre"
+                formControlName="nombre"
+                type="text"
+                class="form-control"
+                placeholder="Nombre"
+              />
+              <div
+                *ngIf="
+                  clienteForm.get('nombre')?.invalid &&
+                  clienteForm.get('nombre')?.touched
+                "
+              >
+                <small class="text-danger">El nombre es obligatorio.</small>
+              </div>
+            </div>
+
+            <!-- Campo Apellidos -->
+            <div class="form-group">
+              <label for="apellidos">Apellidos</label>
+              <input
+                id="apellidos"
+                formControlName="apellidos"
+                type="text"
+                class="form-control"
+                placeholder="Apellidos"
+              />
+              <div
+                *ngIf="
+                  clienteForm.get('apellidos')?.invalid &&
+                  clienteForm.get('apellidos')?.touched
+                "
+              >
+                <small class="text-danger"
+                  >Los apellidos son obligatorios.</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!-- Campo Precio -->
+            <div class="form-group">
+              <label for="contraseña">contraseña</label>
+              <input
+                id="contraseña"
+                formControlName="contraseña"
+                type="password"
+                class="form-control"
+                placeholder="Contraseña"
+              />
+              <div
+                *ngIf="
+                  clienteForm.get('contraseña')?.invalid &&
+                  clienteForm.get('contraseña')?.touched
+                "
+              >
+                <small class="text-danger">El contraseña es obligatorio.</small>
+              </div>
+            </div>
+
+            <!-- Campo Dirección -->
+            <div class="form-group">
+              <label for="direccion">Dirección</label>
+              <input
+                id="direccion"
+                formControlName="direccion"
+                type="text"
+                class="form-control"
+                placeholder="Dirección"
+              />
+              <div
+                *ngIf="
+                  clienteForm.get('direccion')?.invalid &&
+                  clienteForm.get('direccion')?.touched
+                "
+              >
+                <small class="text-danger">La dirección es obligatoria.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <!-- Botón Guardar o Editar -->
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="clienteForm.invalid"
+          *ngIf="!editar"
+        >
+          Guardar Cliente
+        </button>
+        <button
+          (click)="editarCliente()"
+          class="btn btn-success"
+          *ngIf="editar"
+        >
+          Editar Cliente
+        </button>
+        <button (click)="limpiar()" class="btn btn-danger">Cancelar</button>
+      </form>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5>Lista de cliente</h5>
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource" matSort class="mat-table">
+          <!-- Columna ID -->
+          <ng-container matColumnDef="Id">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+            <td mat-cell *matCellDef="let cliente">{{ cliente.Id }}</td>
+          </ng-container>
+
+          <!-- Columna Nombre -->
+          <ng-container matColumnDef="Nombre">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Nombre</th>
+            <td mat-cell *matCellDef="let cliente">{{ cliente.Nombre }}</td>
+          </ng-container>
+
+          <!-- Columna Apellidos -->
+          <ng-container matColumnDef="Apellidos">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Apellidos</th>
+            <td mat-cell *matCellDef="let cliente">{{ cliente.Apellidos }}</td>
+          </ng-container>
+
+          <!-- Columna Dirección -->
+          <ng-container matColumnDef="Direccion">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Dirección</th>
+            <td mat-cell *matCellDef="let cliente">{{ cliente.Direccion }}</td>
+          </ng-container>
+
+          <!-- Columna Acciones -->
+          <ng-container matColumnDef="Acciones">
+            <th mat-header-cell *matHeaderCellDef>Acciones</th>
+            <td mat-cell *matCellDef="let cliente">
+              <button
+                class="btn btn-info btn-sm mx-1"
+                (click)="onEdit(cliente)"
+              >
+                <i class="fas fa-edit"></i>
+              </button>
+              <button
+                class="btn btn-danger btn-sm mx-1"
+                (click)="onDelete(cliente)"
+              >
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </td>
+          </ng-container>
+
+          <!-- Header de la tabla -->
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <!-- Fila de datos -->
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+
+        <!-- Paginador -->
+        <mat-paginator
+          [pageSizeOptions]="[5, 10, 20]"
+          showFirstLastButtons
+        ></mat-paginator>
+      </div>
+    </div>
+  </div>
+</div>
